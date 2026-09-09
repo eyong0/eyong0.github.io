@@ -1,7 +1,8 @@
 ---
 title: "Edmund Yong"
+about:
+  template: solana
+  image: images/profile.png
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My name is Edmund Yong and I am part of the UBC MDS 2027 cohort. I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. Before MDS, I worked at CGI for 4 years as a Software Engineer Consultant, creating software solutions for various clients and companies in Nashville, TN. During my time at CGI, I gained exposure to data engineering and data science. My hope with this program is to expand on what I learned about data science while working for numerous clients.

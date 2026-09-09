@@ -2,4 +2,11 @@
 title: "About"
 ---
 
-About this site
+## Background
+I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. After working out of Nashville, TN for several years, I decided that I wanted to return to school for a master's degree in data science outside the country which is what led me to Vancouver and the University of British Columbia.
+
+## Why Data Science
+While getting my bachelor's degree in computer science, I had the opportunity to write an undergraduate thesiswhich involved training a model to play Cassino, a lesser-known card game that my thesis mentor had played as a child. My research led me to learn about different machine learning methods that could train agents to play both deterministic and non-deterministic games. Although the model I trained to play Cassino performed very poorly, the knowledge and experience I gained from my thesis are what sparked my interest in data science.
+
+## Outside of Data Science
+Outside of data science, my hobbies can range anywhere from video games, learning languages, scuba diving, badminton, and many other activities. Outside of these, I'm always open to trying new activities.

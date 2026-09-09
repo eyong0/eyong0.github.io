@@ -4,13 +4,34 @@
     "href": "index.html",
     "title": "Edmund Yong",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "My name is Edmund Yong and I am part of the UBC MDS 2027 cohort. I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. Before MDS, I worked at CGI for 4 years as a Software Engineer Consultant, creating software solutions for various clients and companies in Nashville, TN. During my time at CGI, I gained exposure to data engineering and data science. My hope with this program is to expand on what I learned about data science while working for numerous clients."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. After working out of Nashville, TN for several years, I decided that I wanted to return to school for a master’s degree in data science outside the country which is what led me to Vancouver and the University of British Columbia."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. After working out of Nashville, TN for several years, I decided that I wanted to return to school for a master’s degree in data science outside the country which is what led me to Vancouver and the University of British Columbia."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why Data Science",
+    "text": "Why Data Science\nWhile getting my bachelor’s degree in computer science, I had the opportunity to write an undergraduate thesiswhich involved training a model to play Cassino, a lesser-known card game that my thesis mentor had played as a child. My research led me to learn about different machine learning methods that could train agents to play both deterministic and non-deterministic games. Although the model I trained to play Cassino performed very poorly, the knowledge and experience I gained from my thesis are what sparked my interest in data science."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of Data Science",
+    "text": "Outside of Data Science\nOutside of data science, my hobbies can range anywhere from video games, learning languages, scuba diving, badminton, and many other activities. Outside of these, I’m always open to trying new activities."
   }
 ]
