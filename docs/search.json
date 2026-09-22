@@ -1,17 +1,24 @@
 [
   {
-    "objectID": "posts/first-weeks/index.html",
-    "href": "posts/first-weeks/index.html",
-    "title": "My first weeks in MDS",
+    "objectID": "posts/palmer-penguins-r/index.html",
+    "href": "posts/palmer-penguins-r/index.html",
+    "title": "Penguin Analysis (Bill Length)",
     "section": "",
-    "text": "Orientation day on campus."
+    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, while male penguins mostly have longer bills compared to female penguins, the female penguins of the Chinstrap species display the opposite behavior.\n\n\nCode\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nmodified_penguins &lt;- penguins\nmodified_penguins &lt;- drop_na(modified_penguins, sex)\nmodified_penguins &lt;- ggplot(data = modified_penguins, mapping = aes  (x = species,\n    y = bill_length_mm,\n    fill = sex)) +\n    geom_col(position='dodge') +\n    xlab(\"Species\") +\n    ylab(\"Bill Length (mm)\") +\n    theme_bw() +\n    theme(text = element_text(size = 18))\nmodified_penguins\n\n\n\n\n\n\n\n\nFigure 1: Bill length of penguins by species.\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "posts/palmer-penguins-r/index.html#penguin-bill-length-mm",
+    "href": "posts/palmer-penguins-r/index.html#penguin-bill-length-mm",
+    "title": "Penguin Analysis (Bill Length)",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nEdmund Yong\n\n\n\n\n\nNo matching items"
+    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, while male penguins mostly have longer bills compared to female penguins, the female penguins of the Chinstrap species display the opposite behavior.\n\n\nCode\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nmodified_penguins &lt;- penguins\nmodified_penguins &lt;- drop_na(modified_penguins, sex)\nmodified_penguins &lt;- ggplot(data = modified_penguins, mapping = aes  (x = species,\n    y = bill_length_mm,\n    fill = sex)) +\n    geom_col(position='dodge') +\n    xlab(\"Species\") +\n    ylab(\"Bill Length (mm)\") +\n    theme_bw() +\n    theme(text = element_text(size = 18))\nmodified_penguins\n\n\n\n\n\n\n\n\nFigure 1: Bill length of penguins by species.\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Edmund Yong",
+    "section": "",
+    "text": "My name is Edmund Yong and I am part of the UBC MDS 2027 cohort. I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. Before MDS, I worked at CGI for 4 years as a Software Engineer Consultant, creating software solutions for various clients and companies in Nashville, TN. During my time at CGI, I gained exposure to data engineering and data science. My hope with this program is to expand on what I learned about data science while working for numerous clients."
   },
   {
     "objectID": "about.html",
@@ -42,10 +49,17 @@
     "text": "Outside of Data Science\nOutside of data science, my hobbies can range anywhere from video games, learning languages, scuba diving, badminton, and many other activities. Outside of these, I’m always open to trying new activities."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Edmund Yong",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "My name is Edmund Yong and I am part of the UBC MDS 2027 cohort. I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. Before MDS, I worked at CGI for 4 years as a Software Engineer Consultant, creating software solutions for various clients and companies in Nashville, TN. During my time at CGI, I gained exposure to data engineering and data science. My hope with this program is to expand on what I learned about data science while working for numerous clients."
+    "text": "Penguin Analysis (Bill Length)\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nEdmund Yong\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nEdmund Yong\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "Orientation day on campus."
   }
 ]
