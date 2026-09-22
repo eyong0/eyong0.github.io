@@ -1,5 +1,5 @@
 ---
-title: "Penguin Analysis (Bill Length)"
+title: "Penguin Bill Length Analysis (R)"
 author: "Edmund Yong"
 date: "2026/09/21"
 format: 
