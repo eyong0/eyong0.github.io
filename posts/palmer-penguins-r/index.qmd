@@ -8,7 +8,7 @@ format:
 ---
 
 ## Penguin Bill Length (mm)
-Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, while male penguins mostly have longer bills compared to female penguins, the female penguins of the Chinstrap species display the opposite behavior.
+Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.
 
 ```{r}
 #| label: fig-penguin-mass
@@ -20,6 +20,10 @@ library(palmerpenguins)
 
 modified_penguins <- penguins
 modified_penguins <- drop_na(modified_penguins, sex)
+modified_penguins <- modified_penguins |>
+  group_by(species, sex) |>
+  summarise(bill_length_mm = mean(bill_length_mm))
+
 modified_penguins <- ggplot(data = modified_penguins, mapping = aes  (x = species,
     y = bill_length_mm,
     fill = sex)) +

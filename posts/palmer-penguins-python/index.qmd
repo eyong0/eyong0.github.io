@@ -1,0 +1,33 @@
+---
+title: "Penguin Bill Length Analysis (Python)"
+author: "Edmund Yong"
+date: "2026/09/21"
+format: 
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+## Penguin Bill Length (mm)
+Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+from palmerpenguins import load_penguins
+
+penguins = load_penguins()
+modified_penguins = penguins.dropna(subset='sex').groupby(by=['species', 'sex'])['bill_length_mm'].mean().unstack()
+
+modified_penguins.plot(kind="bar")
+
+plt.xlabel("Species")
+plt.ylabel("Bill Length (mm)")
+plt.xticks(rotation=0)
+plt.legend(title="Sex")
+plt.grid(axis="y")
+plt.tight_layout()
+plt.show()
+```
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
+Palmer Station Antarctica LTER.
