@@ -11,7 +11,7 @@ format:
 Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.
 
 ```{r}
-#| label: fig-penguin-mass
+#| label: fig-penguin-bill-length
 #| fig-cap: "Bill length of penguins by species."
 #| message: false
 #| warning: false
