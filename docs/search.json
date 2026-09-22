@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "posts/palmer-penguins-r/index.html",
+    "href": "posts/palmer-penguins-r/index.html",
+    "title": "Penguin Bill Length Analysis (R)",
+    "section": "",
+    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.\n\n\nCode\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nmodified_penguins &lt;- penguins\nmodified_penguins &lt;- drop_na(modified_penguins, sex)\nmodified_penguins &lt;- modified_penguins |&gt;\n  group_by(species, sex) |&gt;\n  summarise(bill_length_mm = mean(bill_length_mm))\n\nmodified_penguins &lt;- ggplot(data = modified_penguins, mapping = aes  (x = species,\n    y = bill_length_mm,\n    fill = sex)) +\n    geom_col(position='dodge') +\n    xlab(\"Species\") +\n    ylab(\"Bill Length (mm)\") +\n    theme_bw() +\n    theme(text = element_text(size = 18))\nmodified_penguins\n\n\n\n\n\n\n\n\nFigure 1: Bill length of penguins by species.\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
+  },
+  {
+    "objectID": "posts/palmer-penguins-r/index.html#penguin-bill-length-mm",
+    "href": "posts/palmer-penguins-r/index.html#penguin-bill-length-mm",
+    "title": "Penguin Bill Length Analysis (R)",
+    "section": "",
+    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.\n\n\nCode\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nmodified_penguins &lt;- penguins\nmodified_penguins &lt;- drop_na(modified_penguins, sex)\nmodified_penguins &lt;- modified_penguins |&gt;\n  group_by(species, sex) |&gt;\n  summarise(bill_length_mm = mean(bill_length_mm))\n\nmodified_penguins &lt;- ggplot(data = modified_penguins, mapping = aes  (x = species,\n    y = bill_length_mm,\n    fill = sex)) +\n    geom_col(position='dodge') +\n    xlab(\"Species\") +\n    ylab(\"Bill Length (mm)\") +\n    theme_bw() +\n    theme(text = element_text(size = 18))\nmodified_penguins\n\n\n\n\n\n\n\n\nFigure 1: Bill length of penguins by species.\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "Orientation day on campus."
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
@@ -7,31 +28,52 @@
     "text": "Penguin Bill Length Analysis (Python)\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nEdmund Yong\n\n\n\n\n\n\n\n\n\n\n\n\nPenguin Bill Length Analysis (R)\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nEdmund Yong\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 9, 2026\n\n\nEdmund Yong\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. After working out of Nashville, TN for several years, I decided that I wanted to return to school for a master’s degree in data science outside the country which is what led me to Vancouver and the University of British Columbia."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. After working out of Nashville, TN for several years, I decided that I wanted to return to school for a master’s degree in data science outside the country which is what led me to Vancouver and the University of British Columbia."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why Data Science",
+    "text": "Why Data Science\nWhile getting my bachelor’s degree in computer science, I had the opportunity to write an undergraduate thesiswhich involved training a model to play Cassino, a lesser-known card game that my thesis mentor had played as a child. My research led me to learn about different machine learning methods that could train agents to play both deterministic and non-deterministic games. Although the model I trained to play Cassino performed very poorly, the knowledge and experience I gained from my thesis are what sparked my interest in data science."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of Data Science",
+    "text": "Outside of Data Science\nOutside of data science, my hobbies can range anywhere from video games, learning languages, scuba diving, badminton, and many other activities. Outside of these, I’m always open to trying new activities."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Edmund Yong",
+    "section": "",
+    "text": "My name is Edmund Yong and I am part of the UBC MDS 2027 cohort. I am from Tennessee in the United States and I studied at East Tennessee State University for my undergraduate degree in Computer Science. Before MDS, I worked at CGI for 4 years as a Software Engineer Consultant, creating software solutions for various clients and companies in Nashville, TN. During my time at CGI, I gained exposure to data engineering and data science. My hope with this program is to expand on what I learned about data science while working for numerous clients."
+  },
+  {
     "objectID": "posts/palmer-penguins-python/index.html",
     "href": "posts/palmer-penguins-python/index.html",
     "title": "Penguin Bill Length Analysis (Python)",
     "section": "",
-    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, while male penguins mostly have longer bills compared to female penguins, the female penguins of the Chinstrap species display the opposite behavior.\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\nmodified_penguins = penguins.dropna(subset='sex').groupby(by=['species', 'sex'])['bill_length_mm'].mean().unstack()\n\nmodified_penguins.plot(kind=\"bar\")\n\nplt.xlabel(\"Species\")\nplt.ylabel(\"Bill Length (mm)\")\nplt.xticks(rotation=0)\nplt.legend(title=\"Sex\")\nplt.grid(axis=\"y\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
+    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\nmodified_penguins = penguins.dropna(subset='sex').groupby(by=['species', 'sex'])['bill_length_mm'].mean().unstack()\n\nmodified_penguins.plot(kind=\"bar\")\n\nplt.xlabel(\"Species\")\nplt.ylabel(\"Bill Length (mm)\")\nplt.xticks(rotation=0)\nplt.legend(title=\"Sex\")\nplt.grid(axis=\"y\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
   },
   {
     "objectID": "posts/palmer-penguins-python/index.html#penguin-bill-length-mm",
     "href": "posts/palmer-penguins-python/index.html#penguin-bill-length-mm",
     "title": "Penguin Bill Length Analysis (Python)",
     "section": "",
-    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, while male penguins mostly have longer bills compared to female penguins, the female penguins of the Chinstrap species display the opposite behavior.\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\nmodified_penguins = penguins.dropna(subset='sex').groupby(by=['species', 'sex'])['bill_length_mm'].mean().unstack()\n\nmodified_penguins.plot(kind=\"bar\")\n\nplt.xlabel(\"Species\")\nplt.ylabel(\"Bill Length (mm)\")\nplt.xticks(rotation=0)\nplt.legend(title=\"Sex\")\nplt.grid(axis=\"y\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
-  },
-  {
-    "objectID": "posts/palmer-penguins-r/index.html",
-    "href": "posts/palmer-penguins-r/index.html",
-    "title": "Penguin Bill Length Analysis (R)",
-    "section": "",
-    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, while male penguins mostly have longer bills compared to female penguins, the female penguins of the Chinstrap species display the opposite behavior.\n\n\nCode\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nmodified_penguins &lt;- penguins\nmodified_penguins &lt;- drop_na(modified_penguins, sex)\nmodified_penguins &lt;- modified_penguins |&gt;\n  group_by(species, sex) |&gt;\n  summarise(bill_length_mm = mean(bill_length_mm))\n\nmodified_penguins &lt;- ggplot(data = modified_penguins, mapping = aes  (x = species,\n    y = bill_length_mm,\n    fill = sex)) +\n    geom_col(position='dodge') +\n    xlab(\"Species\") +\n    ylab(\"Bill Length (mm)\") +\n    theme_bw() +\n    theme(text = element_text(size = 18))\nmodified_penguins\n\n\n\n\n\n\n\n\nFigure 1: Bill length of penguins by species.\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
-  },
-  {
-    "objectID": "posts/palmer-penguins-r/index.html#penguin-bill-length-mm",
-    "href": "posts/palmer-penguins-r/index.html#penguin-bill-length-mm",
-    "title": "Penguin Bill Length Analysis (R)",
-    "section": "",
-    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, while male penguins mostly have longer bills compared to female penguins, the female penguins of the Chinstrap species display the opposite behavior.\n\n\nCode\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nmodified_penguins &lt;- penguins\nmodified_penguins &lt;- drop_na(modified_penguins, sex)\nmodified_penguins &lt;- modified_penguins |&gt;\n  group_by(species, sex) |&gt;\n  summarise(bill_length_mm = mean(bill_length_mm))\n\nmodified_penguins &lt;- ggplot(data = modified_penguins, mapping = aes  (x = species,\n    y = bill_length_mm,\n    fill = sex)) +\n    geom_col(position='dodge') +\n    xlab(\"Species\") +\n    ylab(\"Bill Length (mm)\") +\n    theme_bw() +\n    theme(text = element_text(size = 18))\nmodified_penguins\n\n\n\n\n\n\n\n\nFigure 1: Bill length of penguins by species.\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
+    "text": "Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\nmodified_penguins = penguins.dropna(subset='sex').groupby(by=['species', 'sex'])['bill_length_mm'].mean().unstack()\n\nmodified_penguins.plot(kind=\"bar\")\n\nplt.xlabel(\"Species\")\nplt.ylabel(\"Bill Length (mm)\")\nplt.xticks(rotation=0)\nplt.legend(title=\"Sex\")\nplt.grid(axis=\"y\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nData: Palmer Penguins, Palmer Station Antarctica LTER."
   }
 ]
