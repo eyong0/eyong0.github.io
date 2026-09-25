@@ -7,24 +7,51 @@ format:
     code-fold: true
 ---
 
-## Penguin Bill Length (mm)
-Figure 1 is shown below and shows the varying bill lengths in millimeters for different penguin species grouped by sex. From the chart below, male penguins on average across the listed species have longer bills compared to female penguins.
+## Goal
+The goal of this post is to showcase the varying bill lengths in millimeters for different penguin species by sex.
+
+### Data Source
+The data used in this post is sourced from the [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/) dataset shown below in @tbl-palmerpenguins-dataset.
 
 ```{r}
-#| label: fig-penguin-bill-length
-#| fig-cap: "Bill length of penguins by species."
+#| label: tbl-palmerpenguins-dataset
+#| tbl-cap: "Palmer Penguins Dataset"
 #| message: false
 #| warning: false
 library(tidyverse)
 library(palmerpenguins)
 
+head(penguins)
+```
+
+### Data Cleanup
+
+The cleaned data can be found below in @tbl-penguin-bill-length. To clean the data, records without a recorded sex were removed from the original dataset. The mean of the penguins' bill length was then calculated after grouping by the penguins' species and sex.
+
+```{r}
+#| label: tbl-penguin-bill-length
+#| tbl-cap: "Bill length of penguins by species (Table)."
+#| message: false
+#| warning: false
 modified_penguins <- penguins
 modified_penguins <- drop_na(modified_penguins, sex)
 modified_penguins <- modified_penguins |>
   group_by(species, sex) |>
   summarise(bill_length_mm = mean(bill_length_mm))
 
-modified_penguins <- ggplot(data = modified_penguins, mapping = aes  (x = species,
+modified_penguins
+
+```
+
+### Findings
+After cleaning the data and viewing the data it in @fig-penguin-bill-length below, it can be observed that male penguins on average across the listed species have longer bills compared to female penguins.
+
+```{r}
+#| label: fig-penguin-bill-length
+#| fig-cap: "Bill length of penguins by species (Chart)."
+#| message: false
+#| warning: false
+modified_penguins_plot <- ggplot(data = modified_penguins, mapping = aes  (x = species,
     y = bill_length_mm,
     fill = sex)) +
     geom_col(position='dodge') +
@@ -32,7 +59,7 @@ modified_penguins <- ggplot(data = modified_penguins, mapping = aes  (x = specie
     ylab("Bill Length (mm)") +
     theme_bw() +
     theme(text = element_text(size = 18))
-modified_penguins
+modified_penguins_plot
 ```
 Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
 Palmer Station Antarctica LTER.
